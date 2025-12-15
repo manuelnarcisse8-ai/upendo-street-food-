@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upendo Street Food</title>
+
+<style>
+:root {
+  --jaune: #f4c430;
+  --marron: #5a2e0c;
+  --noir: #111;
+  --blanc: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fafafa;
+  color: var(--noir);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, var(--jaune), #ffd966);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header img {
+  width: 140px;
+}
+
+header h1 {
+  margin: 10px 0 5px;
+  font-size: 32px;
+  color: var(--marron);
+}
+
+header p {
+  font-weight: bold;
+}
+
+/* NAV */
+nav {
+  background: var(--noir);
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: var(--blanc);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: var(--marron);
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+/* MENU */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--blanc);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: var(--marron);
+  margin: 15px 0 5px;
+}
+
+.card p {
+  padding: 0 15px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--noir);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 25px;
+  background: var(--marron);
+  color: var(--blanc);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* COMMAND */
+.command {
+  background: var(--jaune);
+  text-align: center;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--noir);
+  color: var(--blanc);
+  text-align: center;
+  padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="LOGO_UPENDO.png" alt="Upendo Street Food">
+  <h1>UPENDO STREET FOOD</h1>
+  <p>Smash Burgers • Street • Authentique</p>
+</header>
+
+<nav>
+  <a href="#menu">Menu</a>
+  <a href="#commande">Commander</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="menu">
+<h2>Nos Burgers</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="upensmash.jpg">
+<h3>UpenSmash</h3>
+<p>1 steak smash, cheddar fondant, sauce Upendo</p>
+<div class="price">10€</div>
+</div>
+
+<div class="card">
+<img src="dosmash.jpg">
+<h3>DoSmash</h3>
+<p>2 steaks smash, cheddar, oignons, sauce maison</p>
+<div class="price">12€</div>
+</div>
+
+<div class="card">
+<img src="merguez.jpg">
+<h3>Sandwich Merguez</h3>
+<p>Baguette briochée, merguez, oignons, sauce street</p>
+<div class="price">10€</div>
+</div>
+
+</div>
+</section>
+
+<section class="command" id="commande">
+<h2>Commander Maintenant</h2>
+<p>Commande rapide par WhatsApp</p>
+
+<a class="btn" href="https://wa.me/33768577726">
+Commander au 07 68 57 77 26
+</a>
+
+<a class="btn" href="https://wa.me/33601202721">
+Commander au 06 01 20 27 21
+</a>
+</section>
+
+<section id="contact">
+<h2>Infos Pratiques</h2>
+
+<p style="text-align:center;">
+📍 Paris 75001<br><br>
+<b>Horaires</b><br>
+Lundi : OFF<br>
+Mardi → Jeudi : 21h - 04h<br>
+Vendredi → Dimanche : 05h - 12h<br><br>
+🚚 Livraison : 5€ (+ de 5km)<br>
+📦 Retrait sur place possible
+</p>
+</section>
+
+<footer>
+© 2025 Upendo Street Food – Tous droits réservés
+</footer>
+
+</body>
+</html>
